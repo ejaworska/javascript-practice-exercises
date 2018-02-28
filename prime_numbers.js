@@ -1,8 +1,8 @@
 const min = 1, max = 100;
 const prime_numbers = [];
-for (let i = min; i <= max; i++){
-  let prime = true;
-  for (let j=2; j<i; j++){
+for (var i = min; i <= max; i++){
+  var prime = true;
+  for (var j=2; j<i; j++){
     if (i%j === 0 && i!=j){
       prime = false;
       break;
@@ -12,4 +12,5 @@ for (let i = min; i <= max; i++){
     prime_numbers.push(i);
   }
 }
-console.log("Prime prime_numbers from " + min + " to " + max + ": " + prime_numbers.join(" "));
+console.log("Prime numbers from " + min + " to " + max + ":\n"
++ prime_numbers.join(" "));
